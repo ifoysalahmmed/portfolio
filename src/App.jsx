@@ -5,6 +5,7 @@ import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <About></About>
       <Portfolio></Portfolio>
       <Experience></Experience>
+      <Contact></Contact>
       <SocialLinks></SocialLinks>
     </div>
   );
