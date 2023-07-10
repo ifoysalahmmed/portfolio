@@ -3,6 +3,7 @@ import HeroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -41,21 +42,38 @@ const Home = () => {
             <span className="font-bold text-cyan-300">Express,</span> and{" "}
             <span className="font-bold text-cyan-300">MongoDB.</span>
           </p>
-          <div>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight
-                  size={25}
-                  className="ml-1"
-                ></MdOutlineKeyboardArrowRight>
-              </span>
-            </Link>
+          <div className="flex flex-row items-center gap-6">
+            <div>
+              <Link
+                to="portfolio"
+                smooth
+                duration={500}
+                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              >
+                Portfolio
+                <span className="group-hover:rotate-90 duration-300">
+                  <MdOutlineKeyboardArrowRight
+                    size={25}
+                    className="ml-1"
+                  ></MdOutlineKeyboardArrowRight>
+                </span>
+              </Link>
+            </div>
+            <div>
+              <a
+                href="/Foysal's Resume.pdf"
+                download={true}
+                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 cursor-pointer"
+              >
+                Resume
+                <span className="duration-500 hover:scale-125">
+                  <BsFillPersonLinesFill
+                    size={25}
+                    className="ml-2"
+                  ></BsFillPersonLinesFill>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
         <div>
